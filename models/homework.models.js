@@ -10,8 +10,8 @@ const HomeworkSchema = new Schema({
         type: String,
         require: true
     },
-    DueData: {
-        type: String,
+    dueData: {
+        type: Date,
         require: true
     },
     StudentID: {
