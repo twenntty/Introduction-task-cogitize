@@ -15,8 +15,8 @@ const HomeworkSchema = new Schema({
         require: true
     },
     StudentID: {
-        type: String,
-        require: true
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Student'
     }
 })
 
