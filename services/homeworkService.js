@@ -1,4 +1,4 @@
-const Homework = require('../models/homework');
+const Homework = require('./models/homework');
 
 class HomeworkService {
     async create(homeworkData) {

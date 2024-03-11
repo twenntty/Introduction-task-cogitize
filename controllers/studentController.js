@@ -1,4 +1,4 @@
-const studentService = require('../services/studentService');
+const studentService = require('../services/studentsService');
 
 class StudentController {
     async create(req, res, next) {
