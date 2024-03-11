@@ -5,6 +5,7 @@ const router = require('./routers');
 require('dotenv').config();
 
 const app = express();
+const PORT = 3000;
 
 app.use(bodyParser.json());
 app.use('/', router);
@@ -18,6 +19,6 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something went wrong!');
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on http://localhost:${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
